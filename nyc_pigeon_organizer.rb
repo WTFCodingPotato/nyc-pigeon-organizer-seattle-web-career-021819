@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
     hashes.each do |attribute, array|
       array.each do |name|
         if new_list.has_key?(name)
-          if new_list[name].has_key(list)
+          if new_list[name].has_key?(list)
             new_list[name][list] << attribute.to_s
           else
             new_list[name] = new_list[name.merge({list => [attribute.to_s]})]
