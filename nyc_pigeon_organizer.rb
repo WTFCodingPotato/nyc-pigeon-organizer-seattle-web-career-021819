@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
           if new_list[name].has_key?(list)
             new_list[name][list] << attribute.to_s
           else
-            new_list[name] = new_list[name].merge({list => [attribute.to_s]})]
+            new_list[name] = new_list[name].merge({list => [attribute.to_s]})
           end
         else
           new_list[name] = {list => [attribute.to_s]}
